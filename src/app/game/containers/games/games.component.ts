@@ -17,4 +17,8 @@ export class GamesComponent implements OnInit {
     { id: 4, name: 'super smash bros melee', console: 'GameCube' },
     { id: 5, name: 'ratchet et clank', console: 'PlayStation 2' },
   ];
+
+  showDetails(game: any) {
+    console.log(game);
+  }
 }
