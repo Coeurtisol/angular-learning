@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Game } from '../../models/Model';
 
 @Component({
   selector: 'val-game-details',
@@ -6,5 +7,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-details.component.scss'],
 })
 export class GameDetailsComponent {
-  game = { id: 1, name: 'Mario', console: 'nes' };
+  game: Game = { id: 1, name: 'Mario', console: 'Nes' };
 }

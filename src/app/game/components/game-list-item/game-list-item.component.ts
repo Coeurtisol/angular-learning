@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Game } from '../../models/Model';
 
 @Component({
   selector: 'val-game-list-item',
@@ -10,11 +11,11 @@ export class GameListItemComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  @Input() game: any;
+  @Input() game!: Game;
 
-  @Output() onGameClicked = new EventEmitter();
+  @Output() onGameClicked = new EventEmitter<Game>();
 
-  selectGame(game: any) {
+  selectGame(game: Game): void {
     // console.log(this.game);
     // console.log(game);
     this.onGameClicked.emit(game);
