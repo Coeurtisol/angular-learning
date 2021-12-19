@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Game } from '../../models/Model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'val-games',
@@ -7,7 +8,7 @@ import { Game } from '../../models/Model';
   styleUrls: ['./games.component.scss'],
 })
 export class GamesComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -22,5 +23,6 @@ export class GamesComponent implements OnInit {
 
   showDetails(game: Game): void {
     console.log(game);
+    this.router.navigate(['/games', game.id, 'details']);
   }
 }

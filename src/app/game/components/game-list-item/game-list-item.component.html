@@ -1,5 +1,8 @@
-<!-- <li><button (click)="selectGame(game)">Selectionner</button> {{ game.name }} - {{ game.console }}</li> -->
 <li>
   {{ game.name }} - {{ game.console }}
-  <a [routerLink]="['/games', game.id, 'details']">(Détails)</a>
+  <button (click)="selectGame(game)">Détails</button>
 </li>
+<!-- <li>
+  {{ game.name }} - {{ game.console }}
+  <a [routerLink]="['/games', game.id, 'details']">(Détails)</a>
+</li> -->
