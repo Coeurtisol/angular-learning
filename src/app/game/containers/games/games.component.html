@@ -1,8 +1,8 @@
-<ul *ngIf="gameList.length > 0">
+<mat-list *ngIf="gameList.length > 0">
   <val-game-list-item
     *ngFor="let game of gameList"
     (onGameClicked)="showDetails($event)"
     [game]="game"
   ></val-game-list-item>
-</ul>
+</mat-list>
 <div *ngIf="gameList.length == 0">La liste est vide...</div>

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../models/Model';
+import { Game } from '../../models/Game';
 
 @Component({
   selector: 'val-basic-game-infos',

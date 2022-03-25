@@ -1,7 +1,7 @@
-<li>
+<mat-list-item>
   {{ game.name }} - {{ game.console }}
-  <button (click)="selectGame(game)">Détails</button>
-</li>
+  <button mat-raised-button color="primary" (click)="selectGame(game)">Détails</button>
+</mat-list-item>
 <!-- <li>
   {{ game.name }} - {{ game.console }}
   <a [routerLink]="['/games', game.id, 'details']">(Détails)</a>
